@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Milli Takımlar Takvimi</title>
+<title>🇹🇷 Milli Takımlar Maç Takvimi</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,12 +15,66 @@
 <body>
 
 <header>
+
 <h1>🇹🇷 Milli Takımlar Maç Takvimi</h1>
+
+<p class="subtitle">
+Kadın Voleybol • Erkek Voleybol • Erkek Basketbol
+</p>
+
 </header>
 
 <div class="container">
-<div id="matches"></div>
+
+<div class="next-match">
+
+<h2>🔥 Sonraki Maç</h2>
+
+<div id="nextMatchCard"></div>
+
 </div>
+
+<div class="tabs">
+
+<button class="tab active" onclick="showTab('women')">
+🏐 Kadın Voleybol
+</button>
+
+<button class="tab" onclick="showTab('menVolley')">
+🏐 Erkek Voleybol
+</button>
+
+<button class="tab" onclick="showTab('basketball')">
+🏀 Erkek Basketbol
+</button>
+
+</div>
+
+<div id="women" class="tabContent">
+<div id="womenMatches"></div>
+</div>
+
+<div id="menVolley" class="tabContent" style="display:none;">
+<div id="menVolleyMatches"></div>
+</div>
+
+<div id="basketball" class="tabContent" style="display:none;">
+<div id="basketballMatches"></div>
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+Son Güncelleme
+
+<span id="lastUpdate"></span>
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
